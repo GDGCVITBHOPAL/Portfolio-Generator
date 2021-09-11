@@ -1,4 +1,4 @@
-import { Box, Button, Card, CardContent, CircularProgress, Grid, Step, StepLabel, Stepper } from '@material-ui/core';
+import { Box, Button, Card, CardContent, CircularProgress, Grid, Step, StepLabel, Stepper, InputAdornment} from '@material-ui/core';
 import { Field, Form, Formik, FormikConfig, FormikValues } from 'formik';
 import { CheckboxWithLabel, TextField } from 'formik-material-ui';
 import React, { useState } from 'react';
@@ -78,13 +78,13 @@ export default function Index() {
 
           <FormikStep label="GitHub-Token">
             <Box style={{paddingBottom:'1rem'}}>
-              <Field fullWidth required name="githubToken" component={TextField} label="Github Token"/>
+              <Field fullWidth required name="githubToken" component={TextField} label="Github Token" helperText="Copy Paste Your Github Access Token to render recent projects."/>
             </Box>
           </FormikStep>
 
           <FormikStep label="Resume">
             <Box style={{paddingBottom:'1rem'}}>
-              <Field fullWidth required name="resume" type="url" component={TextField} label="Resume Link"/>
+              <Field fullWidth required name="resume" type="url" component={TextField} label="Resume Link" helperText="A drive link to the resume that is visible to all."/>
             </Box>
           </FormikStep>
 
