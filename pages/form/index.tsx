@@ -6,7 +6,7 @@ import { mixed, number, object } from 'yup';
 
 const sleep = () => new Promise((acc) => setTimeout(acc, 3000));
 
-export default function Home() {
+export default function Index() {
   return (
     <div style={{display:'flex', justifyContent:'center', background:'#dddfff', width:'webit-fill-available' , height:'100vh',alignItems:'center'}}>
     <Card style={{display:'flex', justifyContent:'center'}}>
@@ -59,16 +59,16 @@ export default function Home() {
               <Field fullWidth required  type="email" name="social.email" component={TextField} label="E-Mail" />
             </Box>
             <Box style={{paddingBottom:'1rem'}}>
-              <Field fullWidth required name="social.linkedin" component={TextField} label="LinkedIn" />
+              <Field fullWidth required type="url" name="social.linkedin" component={TextField} label="LinkedIn" />
             </Box>
             <Box style={{paddingBottom:'1rem'}}>
-              <Field fullWidth name="social.github" component={TextField} label="GitHub (Optional)" />
+              <Field fullWidth name="social.github" type="url" component={TextField} label="GitHub (Optional)" />
             </Box>
             <Box style={{paddingBottom:'1rem'}}>
-              <Field fullWidth name="social.twitter" component={TextField} label="Twitter (Optional)" />
+              <Field fullWidth name="social.twitter" type="url" component={TextField} label="Twitter (Optional)" />
             </Box>
             <Box style={{paddingBottom:'1rem'}}>
-              <Field fullWidth name="social.instagram" component={TextField} label="Instagram (Optional)" />
+              <Field fullWidth name="social.instagram" type="url" component={TextField} label="Instagram (Optional)" />
             </Box>
           </FormikStep>
 
@@ -84,7 +84,7 @@ export default function Home() {
 
           <FormikStep label="Resume">
             <Box style={{paddingBottom:'1rem'}}>
-              <Field fullWidth required name="resume" component={TextField} label="Resume Link"/>
+              <Field fullWidth required name="resume" type="url" component={TextField} label="Resume Link"/>
             </Box>
           </FormikStep>
 
