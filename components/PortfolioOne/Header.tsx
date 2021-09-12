@@ -81,7 +81,7 @@ const MenusContainer = styled.div<MenusContainerProps>`
   transition: transform 0.2s ease-out;
 
   @media screen and (max-width: 600px) {
-    background: #005554;
+    background: var(--primary);
     color: white;
     position: fixed;
     flex-direction: column;

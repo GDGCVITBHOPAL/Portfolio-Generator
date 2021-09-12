@@ -12,6 +12,9 @@ import { ProfileDataInterface } from "../../data/interfaces/previewInterfaces";
 //assets
 import githubIcon from "@assets/images/github.png";
 import linkedinIcon from "@assets/images/linkedin.png";
+import Contact from "./Contact";
+import Footer from "./Footer";
+import SocialBtns from "./common/SocialBtns";
 
 interface ButtonProps {
   isOutlined?: boolean;
@@ -22,7 +25,12 @@ const PortfolioOne = ({
 }: {
   portfolioData: ProfileDataInterface;
 }) => {
-  const { fullName, role, dpURL } = portfolioData;
+  const {
+    fullName,
+    role,
+    dpURL,
+    socials: { github, linkedin },
+  } = portfolioData;
 
   return (
     <Page>
@@ -37,12 +45,7 @@ const PortfolioOne = ({
           <Button>Hire Me</Button>
           <Button isOutlined>View CV</Button>
           <br />
-          <SocialIcon>
-            <Image src={githubIcon} alt="github" height={50} width={50} />
-          </SocialIcon>
-          <SocialIcon>
-            <Image src={linkedinIcon} alt="linkedin" height={50} width={50} />
-          </SocialIcon>
+          <SocialBtns githubUrl={github} linkedinUrl={linkedin} />
         </BannerItem>
         <BannerItem>
           <ProfileImage src={dpURL} />
@@ -50,6 +53,10 @@ const PortfolioOne = ({
       </Banner>
 
       <Projects />
+
+      <Contact />
+
+      <Footer portfolioData={portfolioData} />
     </Page>
   );
 };
@@ -80,13 +87,16 @@ const Banner = styled.div`
 const BannerItem = styled.div``;
 
 const Button = styled.div<ButtonProps>`
-  background: ${({ isOutlined }) => (isOutlined ? "transparent" : "#005554")};
+  background: ${({ isOutlined }) =>
+    isOutlined ? "transparent" : "var(--primary)"};
   display: inline-block;
   padding: 0.75rem 2rem;
-  color: ${({ isOutlined }) => (!isOutlined ? "white" : "#005554")};
-  border: 2px solid #005554;
+  color: ${({ isOutlined }) => (!isOutlined ? "white" : "var(--primary)")};
+  border: 2px solid var(--primary);
   margin-right: 1rem;
   cursor: pointer;
+  font-size: 1.25rem;
+  border-radius: 0.25rem;
 
   &:hover {
     opacity: ${({ isOutlined }) => (isOutlined ? 0.6 : 0.8)};
