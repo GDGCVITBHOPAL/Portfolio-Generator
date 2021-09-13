@@ -13,7 +13,7 @@ export default function Index() {
       <CardContent>
         <FormikStepper
           initialValues={{
-            firstName: '',
+            firstName:'',
             lastName: '',
             social:{
               'email':'',
@@ -22,7 +22,7 @@ export default function Index() {
               'twitter':'',
               'instagram':'',
             },
-            skills:[],
+            skills:['','','','','','','',''],
             githubToken:'',
             resume:'',
             roles:['','',''],
@@ -73,7 +73,48 @@ export default function Index() {
           </FormikStep>
 
           <FormikStep label="Skills">
-              {/* To prepare a  list of skills to choose from and thn add chosen to skills variable.*/}
+              <Grid container spacing={2} style={{width:'100%', display:'grid', gridTemplateColumns:'1fr 1fr'}}>
+                <Grid item>
+                  <Box style={{paddingBottom:'1rem'}}>
+                    <Field fullWidth  required name="skills[0]" component={TextField} label="Skill 1" />
+                  </Box>
+                 </Grid>
+                 <Grid item>
+                  <Box style={{paddingBottom:'1rem'}}>
+                    <Field fullWidth  required name="skills[1]" component={TextField} label="Skill 2" />
+                  </Box>
+                 </Grid>
+                 <Grid item>
+                  <Box style={{paddingBottom:'1rem'}}>
+                    <Field fullWidth  required name="skills[2]" component={TextField} label="Skill 3" />
+                  </Box>
+                 </Grid>
+                 <Grid item>
+                  <Box style={{paddingBottom:'1rem'}}>
+                    <Field fullWidth  required name="skills[3]" component={TextField} label="Skill 4" />
+                  </Box>
+                 </Grid>
+                 <Grid item>
+                  <Box style={{paddingBottom:'1rem'}}>
+                    <Field fullWidth name="skills[4]" component={TextField} label="Skill 5" />
+                  </Box>
+                 </Grid>
+                 <Grid item>
+                  <Box style={{paddingBottom:'1rem'}}>
+                    <Field fullWidth name="skills[5]" component={TextField} label="Skill 6" />
+                  </Box>
+                 </Grid>
+                 <Grid item>
+                  <Box style={{paddingBottom:'1rem'}}>
+                    <Field fullWidth name="skills[6]" component={TextField} label="Skill 7" />
+                  </Box>
+                 </Grid>
+                 <Grid item>
+                  <Box style={{paddingBottom:'1rem'}}>
+                    <Field fullWidth name="skills[7]" component={TextField} label="Skill 8" />
+                  </Box>
+                 </Grid>
+              </Grid>
           </FormikStep>
 
           <FormikStep label="GitHub-Token">
