@@ -158,6 +158,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 ## Contact
 
 Project Link: [https://github.com/DSCVITBHOPAL/Portfolio-Generator](https://github.com/DSCVITBHOPAL/Portfolio-Generator)
+Discord GDSC Vit Bhopal: [https://discord.gg/tUztcfJH](https://discord.gg/tUztcfJH)
 
 <!-- ACKNOWLEDGEMENTS -->
 <!--
