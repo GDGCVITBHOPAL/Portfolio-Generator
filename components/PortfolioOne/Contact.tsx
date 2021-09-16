@@ -5,7 +5,7 @@ import Image from "next/image";
 import ContactIcon from "@assets/images/contact.png";
 import styled from "styled-components";
 
-const Contact = () => {
+const Contact = ({ contactRef }: { contactRef: any }) => {
   const [form, setForm] = useState({
     fullName: "",
     email: "",
@@ -22,7 +22,7 @@ const Contact = () => {
   };
 
   return (
-    <ContactContainer>
+    <ContactContainer ref={contactRef}>
       <form>
         <h2>Contact</h2>
 

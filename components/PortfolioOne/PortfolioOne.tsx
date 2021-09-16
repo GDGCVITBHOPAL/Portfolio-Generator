@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import styled, { css } from "styled-components";
 import Image from "next/image";
 
@@ -32,9 +32,16 @@ const PortfolioOne = ({
     socials: { github, linkedin },
   } = portfolioData;
 
+  const projectsRef = useRef(null);
+  const contactRef = useRef(null);
+
   return (
     <Page>
-      <Header fullName={fullName} />
+      <Header
+        fullName={fullName}
+        projectsRef={projectsRef}
+        contactRef={contactRef}
+      />
 
       <Banner>
         <BannerItem>
@@ -52,9 +59,9 @@ const PortfolioOne = ({
         </BannerItem>
       </Banner>
 
-      <Projects />
+      <Projects projectsRef={projectsRef} />
 
-      <Contact />
+      <Contact contactRef={contactRef} />
 
       <Footer portfolioData={portfolioData} />
     </Page>

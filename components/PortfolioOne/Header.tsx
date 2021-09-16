@@ -6,9 +6,20 @@ interface MenusContainerProps {
   isMenuOpen: boolean;
 }
 
-const Header = ({ fullName }: { fullName: string }) => {
+const Header = ({
+  fullName,
+  projectsRef,
+  contactRef,
+}: {
+  fullName: string;
+  projectsRef: React.LegacyRef<HTMLDivElement>;
+  contactRef: any;
+}) => {
   //Data
-  const Menus = ["Projects", "Contact"];
+  const Menus = [
+    { title: "Projects", ref: projectsRef },
+    { title: "Contact", ref: contactRef },
+  ];
 
   //State
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
@@ -49,8 +60,18 @@ const Header = ({ fullName }: { fullName: string }) => {
               d="M6 18L18 6M6 6l12 12"
             />
           </CloseIcon>
-          {Menus.map((menu) => (
-            <MenuItem key={menu}>{menu}</MenuItem>
+          {Menus.map(({ title, ref }) => (
+            <MenuItem
+              key={title}
+              onClick={() =>
+                ref.current.scrollIntoView({
+                  behavior: "smooth",
+                  block: "center",
+                })
+              }
+            >
+              {title}
+            </MenuItem>
           ))}
         </MenusContainer>
       </Menu>

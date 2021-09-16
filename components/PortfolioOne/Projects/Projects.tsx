@@ -4,9 +4,13 @@ import styled from "styled-components";
 //components
 import ProjectCard from "./ProjectCard";
 
-const Projects = () => {
+const Projects = ({
+  projectsRef,
+}: {
+  projectsRef: React.LegacyRef<HTMLDivElement>;
+}) => {
   return (
-    <div>
+    <div ref={projectsRef}>
       <h2>Projects</h2>
 
       <ProjectsGrid>
