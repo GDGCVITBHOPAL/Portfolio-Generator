@@ -7,8 +7,15 @@ import { mixed, number, object } from 'yup';
 const sleep = () => new Promise((acc) => setTimeout(acc, 3000));
 
 export default function Index() {
+  const[design,setDesign]=useState(1);
+  
+  const designChange=(value:any)=>{
+        setDesign((design)=>value);
+        console.log(value,design);
+    }
+
   return (
-    <div style={{display:'flex', justifyContent:'center', background:'#dddfff', width:'webit-fill-available' , height:'100vh',alignItems:'center'}}>
+    <div style={{display:'flex', justifyContent:'center', background:'#dddfff', width:'-webit-fill-available' , height:'100vh',alignItems:'center'}}>
     <Card style={{display:'flex', justifyContent:'center'}}>
       <CardContent>
         <FormikStepper
@@ -27,6 +34,7 @@ export default function Index() {
             resume:'',
             roles:['','',''],
             description: '',
+            design:''
           }}
           onSubmit={async (values) => {
             await sleep();
@@ -35,7 +43,7 @@ export default function Index() {
         >
           <FormikStep label="Personal Data">
             <Box style={{paddingBottom:'1rem'}}>
-              <Field fullWidth  required name="firstName" component={TextField} label="First Name" />
+              <Field fullWidth required name="firstName" component={TextField} label="First Name" />
             </Box>
             <Box style={{paddingBottom:'1rem'}}>
               <Field fullWidth required name="lastName" component={TextField} label="Last Name" />
@@ -117,22 +125,40 @@ export default function Index() {
               </Grid>
           </FormikStep>
 
-          <FormikStep label="GitHub-Token">
+          <FormikStep label="Projects & Resume">
             <Box style={{paddingBottom:'1rem'}}>
               <Field fullWidth required name="githubToken" component={TextField} label="Github Token" helperText="Copy Paste Your Github Access Token to render recent projects."/>
             </Box>
-          </FormikStep>
 
-          <FormikStep label="Resume">
             <Box style={{paddingBottom:'1rem'}}>
               <Field fullWidth required name="resume" type="url" component={TextField} label="Resume Link" helperText="A drive link to the resume that is visible to all."/>
             </Box>
           </FormikStep>
 
-          <FormikStep label="More Info">
+          
+          {/* <FormikStep label="More Info">
             <Box style={{paddingBottom:'1rem'}}>
               <Field fullWidth name="description" component={TextField} label="Description" />
             </Box>
+          </FormikStep> */}
+
+          <FormikStep label="design">
+            <div role="group">
+              <div>
+                <div style={{width:'-webkit-fill-available',display:'flex',flexDirection:'row', justifyContent:'space-between', alignItems:'center',padding:"0.5rem 0"}}>
+                <DesignPicker preview="https://www.google.com" title="Design1"/>
+                <Field style={{flex:'0.1',paddingLeft:'3rem'}} type="radio" name="design" value="Option1"/>
+                </div>
+                <div style={{width:'-webkit-fill-available',display:'flex',flexDirection:'row', justifyContent:'space-between', alignItems:'center',padding:"0.5rem 0"}}>
+                <DesignPicker preview="https://www.google.com" title="Design2"/>
+                <Field style={{flex:'0.1', paddingLeft:'3rem'}} type="radio" name="design" value="Option2"/>
+                </div>
+                <div style={{width:'-webkit-fill-available',display:'flex',flexDirection:'row', justifyContent:'space-between', alignItems:'center',padding:"0.5rem 0"}}>
+                <DesignPicker preview="https://www.google.com" title="Design3"/>
+                <Field style={{flex:'0.1', paddingLeft:'3rem'}} type="radio" name="design" value="Option3"/>
+                </div>
+              </div>
+            </div>
           </FormikStep>
 
         </FormikStepper>
@@ -215,5 +241,23 @@ export function FormikStepper({ children, ...props }: FormikConfig<FormikValues>
         </Form>
       )}
     </Formik>
+  );
+}
+
+function DesignPicker({...props}){
+  return(
+    <>
+      <div style={{display:'flex', justifyContent:'space-between', alignItems:'center',flexDirection:'row',flexWrap:'wrap',paddingRight:'3rem'}}>
+        <div style={{paddingRight:"0.7rem"}}>{props.title}</div>
+              <a href={props.preview} target="_blank" rel="noreferrer" >
+                <Button
+                  variant="contained"
+                  color="primary"
+                  >
+                      Preview
+                </Button>
+              </a>
+      </div>
+    </>
   );
 }
