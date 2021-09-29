@@ -147,6 +147,15 @@ Contributions are what make the open source community such an amazing place to l
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
+Creating an Issue
+
+1. Try to give a thorough description of issue so that it can be easily understood
+2. Try providing scshots or ways to reproduce the errors if possible
+
+Working on an Issue
+
+1. Try to get the issue assined to you before working to avoid multiple people working on same issue
+
 ## Points System💻
 
 We decided to come up with a point system for all of our repositories under GDSC, VIT Bhopal and here's how it looks.
