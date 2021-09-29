@@ -147,6 +147,17 @@ Contributions are what make the open source community such an amazing place to l
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
+## Points System💻
+
+We decided to come up with a point system for all of our repositories under GDSC, VIT Bhopal and here's how it looks.
+| Levels | Task | Points |
+| :--- | :---: | ---: |
+| Level 0 | Documentation & Minor Fixes | 5 |
+| Level 1 | Minor Feature addition & Major Bug Fixes | 10 |
+| Level 2 | Major Feature or Component | 15 |
+
+This how the points will be awarded for your respective contributions. This will help us reward our contributors at the end of the year.
+
 <!-- LICENSE -->
 
 ## License
