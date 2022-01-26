@@ -1,6 +1,121 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<!--
+*** Thanks for checking out the Best-README-Template. If you have a suggestion
+*** that would make this better, please fork the repo and create a pull request
+*** or simply open an issue with the tag "enhancement".
+*** Thanks again! Now go create something AMAZING! :D
+***
+***
+***
+*** To avoid retyping too much info. Do a search and replace for the following:
+*** DSCVITBHOPAL, Portfolio-Generator, twitter_handle, email, Portfolio Generator, A Portfolio Generator website developed using NextJS
+-->
 
-## Getting Started
+<!-- PROJECT SHIELDS -->
+<!--
+*** I'm using markdown "reference style" links for readability.
+*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
+*** See the bottom of this document for the declaration of the reference variables
+*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
+*** https://www.markdownguide.org/basic-syntax/#reference-style-links
+-->
+
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]
+
+<!-- [![LinkedIn][linkedin-shield]][linkedin-url] -->
+
+<!-- PROJECT LOGO -->
+<br />
+<p align="center">
+  <a href="https://github.com/DSCVITBHOPAL/Portfolio-Generator">
+    <img src="public/favicon.ico" alt="Logo" width="80" height="80">
+  </a>
+
+  <h3 align="center">Portfolio Generator</h3>
+
+  <p align="center">
+    A Portfolio Generator website developed using NextJS
+    <br />
+    <a href="https://github.com/DSCVITBHOPAL/Portfolio-Generator"><strong>Explore the docs »</strong></a>
+    <br />
+    <br />
+    <a href="https://github.com/DSCVITBHOPAL/Portfolio-Generator">View Demo</a>
+    ·
+    <a href="https://github.com/DSCVITBHOPAL/Portfolio-Generator/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/DSCVITBHOPAL/Portfolio-Generator/issues">Request Feature</a>
+  </p>
+</p>
+
+<!-- TABLE OF CONTENTS -->
+<details open="open">
+  <summary><h2 style="display: inline-block">Table of Contents</h2></summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#license">License</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ol>
+</details>
+
+<!-- ABOUT THE PROJECT -->
+
+## About The Project
+
+A Portfolio Generator website developed using NextJS
+![preview-page](public/ss1.png)
+
+### Built With
+
+- [NextJS](https://nextjs.org/)
+- [styled-components](https://styled-components.com/)
+- [ReactJS](https://reactjs.org/)
+
+<!-- GETTING STARTED -->
+
+### Prerequisites
+
+This is an example of how to list things you need to use the software and how to install them.
+
+- npm
+  ```sh
+  npm i npm@latest -g
+  # or
+  npm i -g yarn
+  ```
+
+### Installation
+
+1. Clone the repo
+   ```sh
+   git clone https://github.com/DSCVITBHOPAL/Portfolio-Generator.git
+   ```
+2. Install NPM packages
+   ```sh
+   npm i
+   # or
+   yarn
+   ```
+
+<!-- USAGE EXAMPLES -->
+
+### Getting Started
 
 First, run the development server:
 
@@ -14,21 +129,58 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+<!-- ROADMAP -->
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Roadmap
 
-## Learn More
+See the [open issues](https://github.com/DSCVITBHOPAL/Portfolio-Generator/issues) for a list of proposed features (and known issues).
 
-To learn more about Next.js, take a look at the following resources:
+<!-- CONTRIBUTING -->
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Contributing
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-## Deploy on Vercel
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+<!-- LICENSE -->
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
+<!-- CONTACT -->
+
+## Contact
+
+Project Link: [https://github.com/DSCVITBHOPAL/Portfolio-Generator](https://github.com/DSCVITBHOPAL/Portfolio-Generator)
+<br />
+Discord Link: [https://discord.gg/AzjNjgEDKW](https://discord.gg/AzjNjgEDKW)
+
+<!-- ACKNOWLEDGEMENTS -->
+<!--
+## Acknowledgements
+
+- []()
+- []()
+- []() -->
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+
+[contributors-shield]: https://img.shields.io/github/contributors/DSCVITBHOPAL/Portfolio-Generator.svg?style=for-the-badge
+[contributors-url]: https://github.com/DSCVITBHOPAL/Portfolio-Generator/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/DSCVITBHOPAL/Portfolio-Generator.svg?style=for-the-badge
+[forks-url]: https://github.com/DSCVITBHOPAL/Portfolio-Generator/network/members
+[stars-shield]: https://img.shields.io/github/stars/DSCVITBHOPAL/Portfolio-Generator.svg?style=for-the-badge
+[stars-url]: https://github.com/DSCVITBHOPAL/Portfolio-Generator/stargazers
+[issues-shield]: https://img.shields.io/github/issues/DSCVITBHOPAL/Portfolio-Generator.svg?style=for-the-badge
+[issues-url]: https://github.com/DSCVITBHOPAL/Portfolio-Generator/issues
+[license-shield]: https://img.shields.io/github/license/DSCVITBHOPAL/Portfolio-Generator.svg?style=for-the-badge
+[license-url]: https://github.com/DSCVITBHOPAL/Portfolio-Generator/blob/master/LICENSE.txt
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-url]: https://linkedin.com/in/DSCVITBHOPAL
