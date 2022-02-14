@@ -1,0 +1,428 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ole&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rye&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+
+.title {
+    font-family: 'Satisfy', cursive;
+    font-size: 36px;
+    position: relative;
+    z-index: 2;
+}
+
+.title_background {
+    background-color: yellow;
+    position: absolute;
+    top: 20px;
+    z-index: -1;
+    width: 100px;
+    height: 30px;
+}
+
+.navtitles {
+    display: flex;
+    font-family: 'Ole', cursive;
+    font-size: 34px;
+    font-weight: bolder;
+
+}
+
+.navbar_list1 {
+    padding-right: 170px;
+    transition: 0.3s ease-in-out;
+}
+
+.navbar_list2 {
+    transition: 0.3s linear;
+}
+
+.navbar_list1:hover {
+    color: tomato;
+}
+
+.navbar_list2:hover {
+    color: rgb(152, 20, 185);
+}
+
+.intro_text {
+    position: relative;
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+.intro_span {
+    color: rgb(6, 177, 189);
+}
+
+.intro_color {
+    position: absolute;
+    left: 300px;
+    z-index: -1;
+    top: 5px;
+    width: 150px;
+    height: 20px;
+    background-color: pink;
+}
+
+.textall {
+    margin-top: 90px;
+}
+
+.first_image {
+    padding-top: 60px;
+}
+
+.image_1 {
+    position: absolute;
+    top: 30% !important;
+}
+
+.image_2 {
+    position: absolute;
+    top: 20%;
+    left: 25%;
+}
+
+.image_3 {
+    position: absolute;
+    top: 20%;
+    left: 95%;
+}
+
+.image_4 {
+    position: absolute;
+    top: 60%;
+    left: 45%;
+}
+
+.about_text {
+    font-family: 'Architects Daughter', cursive;
+    color: black;
+    font-size: 40px;
+    margin-left: 70px;
+}
+
+.fullstack {
+    font-size: 28px !important;
+    position: relative;
+    color: rgb(202, 36, 202);
+
+}
+
+.fullstackdev {
+    font-family: 'Fredericka the Great', cursive;
+    font-weight: bolder;
+}
+
+.competitive {
+    color: rgb(14, 182, 14);
+    font-family: 'Fredericka the Great', cursive;
+    font-weight: bolder;
+}
+
+.software {
+    color: rgba(255, 115, 0, 0.705);
+    font-weight: bolder;
+}
+
+.software:hover {
+    font-family: 'Architects Daughter', cursive !important;
+}
+
+.fullstack::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 3px;
+    left: 0;
+    bottom: -10px;
+    background-color: tomato;
+    transform: rotateX(45deg);
+    transition: 0.3s ease-in-out;
+}
+
+.fullstack:hover::after {
+    width: 100%;
+}
+
+.fullstack:hover {
+    font-weight: bolder;
+    font-size: 35px;
+    font-family: 'Fredericka the Great', cursive;
+}
+
+.freelancer {
+    font-weight: bolder;
+}
+
+.freelancer:hover {
+    font-family: 'Architects Daughter', cursive !important;
+
+}
+
+.Projects_main {
+    text-align: center;
+    font-size: 42px;
+    font-family: 'Abril Fatface', cursive;
+    position: relative;
+    z-index: 2;
+    margin-bottom: 60px;
+
+}
+
+.Projects_underline {
+    width: 130px;
+    height: 30px;
+    background-color: rgba(0, 255, 191, 0.911);
+    position: absolute;
+    z-index: -1;
+    left: 45%;
+    top: 50%;
+
+}
+
+.Wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 24rem);
+    justify-content: center;
+}
+
+.wrapper_container {
+    overflow: hidden;
+    box-shadow: 0px 2px 8px 0px var(--clr-gray-light);
+    background-color: white;
+    text-align: center;
+    border-radius: 1rem;
+    position: relative;
+    margin: 0.5rem;
+}
+
+.banner_img {
+    position: absolute;
+    background-image: url(https://media.istockphoto.com/photos/abstract-blue-digital-background-picture-id1146532466?k=20&m=1146532466&s=612x612&w=0&h=NjZrRzJH4nvxVmTGTvMrMrPGQ03fDNYTmRNoEiNSeCQ=);
+    height: 10rem;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.profile_img {
+    width: 8rem;
+    clip-path: circle(60px at center);
+    margin-top: 4.5rem;
+}
+
+.name {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.description {
+    margin: 1rem 2rem;
+    font-size: 0.9rem;
+}
+
+.btn {
+    width: 100%;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    padding: 1rem;
+    background-color: var(--clr-primary);
+}
+
+.icon_github {
+    margin-right: 10px;
+}
+
+.project_section {
+    background-color: #fff8dc;
+    margin-top: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.hireme {
+    font-family: 'Abril Fatface', cursive;
+    color: rgb(92, 12, 167);
+
+    font-size: 35px;
+
+}
+
+.contactme_text {
+    font-family: 'Arvo', serif;
+    font-weight: bolder;
+    color: rgb(43, 49, 25);
+
+    font-size: 35px;
+
+}
+
+.contactme {
+    position: relative;
+}
+
+.background_contactme {
+    position: absolute;
+    width: 130px;
+    height: 30px;
+    background-color: aqua;
+    z-index: -1;
+    top: 20px;
+    left: 15px;
+
+}
+
+.about_me {
+    position: relative;
+}
+
+.text_aboutme {
+    font-size: 44px;
+    color: black;
+    font-weight: bolder;
+    font-family: 'Arvo', serif;
+}
+
+.Background_aboutme {
+    position: absolute;
+    width: 150px;
+    height: 30px;
+    background-color: greenyellow;
+    top: 28px;
+    z-index: -1;
+    left: 10px;
+}
+
+.linkedin {
+    cursor: pointer;
+}
+
+.links_social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.github {
+    padding: 20px;
+    padding-right: 15px !important;
+    cursor: pointer;
+}
+
+.twitter {
+    cursor: pointer;
+}
+
+.paragraph_aboutme {
+    color: rgb(4, 33, 59);
+    font-size: 22px;
+}
+
+.aboutme_main {
+    padding-top: 50px;
+}
+
+.form_main {
+    margin-bottom: 30px;
+}
+
+.paragraph_first_name {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: greenyellow;
+    background-color: #000000;
+    background-image: linear-gradient(147deg, #000000 0%, #04619f 74%);
+    border-radius: 10px;
+    color: white;
+    padding: 5px;
+}
+
+.paragraph_last_name {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: #63d471;
+    background-image: linear-gradient(315deg, #63d471 0%, #233329 74%);
+    color: white;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.paragraph_email {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: #a4508b;
+    background-image: linear-gradient(326deg, #a4508b 0%, #5f0a87 74%);
+    color: white;
+
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.paragraph_phone {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: #6b0f1a;
+    background-image: linear-gradient(315deg, #6b0f1a 0%, #b91372 74%);
+    color: white;
+
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.paragraph_message {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: #0cbaba;
+    background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
+
+    color: white;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.input_form {
+    border: none;
+    outline: none;
+    border-bottom: 2px solid tomato;
+    width: 250%;
+    margin-bottom: 30px;
+}
+
+.form_submit{
+    background: linear-gradient(95.12deg, #EED979 0%, #4F8CAD 83.42%);
+    border: none;
+    outline: none;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    color: white;
+    transition: 1s ease-in-out;
+
+}
+
+
+.form_submit:hover{
+    background: linear-gradient(95.12deg, #4F8CAD 0%, #EED979 83.42%);
+}
