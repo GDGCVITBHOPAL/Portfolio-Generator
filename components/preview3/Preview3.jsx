@@ -18,8 +18,7 @@ const Preview3 = () => {
     return (
         <div className={dark ? styles.preview3_dark : styles.preview3}>
 
-
-            <div className="container-fluid">
+            <div className={"container-fluid" && styles.navbar_inital}>
                 <div className={styles.navbar}>
                     <h3>logo</h3>
                     <ul className={mobileView ? styles.nav_links_mobile : styles.nav_links} onClick={() => setMobileView(false)}>
@@ -28,14 +27,14 @@ const Preview3 = () => {
                         <Link href="" ><li className={styles.nav_services}>Services</li></Link>
                         <Link href="" ><li className={styles.nav_projects}>Projects</li></Link>
                         <Link href="" ><li className={styles.nav_contact} >Contact</li></Link>
-                        <button onClick={() => setDark(!dark)} className={styles.nav_darkmode}>{dark ? <WbSunnyOutlinedIcon /> : <DarkModeOutlinedIcon />}</button>
+                        <button onClick={() => setDark(!dark)} className={mobileView ? styles.nav_darkmode_mobile : styles.nav_darkmode}>{dark ? <WbSunnyOutlinedIcon /> : <DarkModeOutlinedIcon />}</button>
                     </ul>
                     <button onClick={() => setMobileView(!mobileView)} className={styles.nav_icon}>{mobileView ? <CloseOutlinedIcon /> : <DehazeOutlinedIcon />}</button>
                 </div>
             </div>
 
             <div className="container">
-                <div className="row">
+                <div className={"row" && styles.row_1 }>
                     <div className="col-lg-6 d-flex justify-content-center flex-column">
                         <div className={dark ? styles.intro_dark : styles.intro}>
                             Hello I’m
@@ -95,12 +94,12 @@ const Preview3 = () => {
                 <div className={dark ? styles.second_main_heading_dark : styles.second_main_heading}>Services</div>
                 <div className={dark ? styles.second2_main_heading_dark : styles.second2_main_heading}>What I Can Offer You?</div>
                 <div className="row">
-                    <div className="col-lg-4 d-flex justify-content-end">
+                    <div className="col-lg-4 d-flex flex-column align-items-center justify-content-center margin-bottom-50px ">
                         <div className={dark ? styles.card_1_dark : styles.card_1}>
                             <div className="">
 
                                 <div className={styles.image_card_2}>
-                                <Image src={dark ? "/blackrect.png" : "/backrect.png"} width="100" height="100" />
+                                    <Image src={dark ? "/blackrect.png" : "/backrect.png"} width="100" height="100" />
                                 </div>
                                 <div className={styles.image_card_1}>
                                     <Image src="/backcard.png" width="80" height="80" />
@@ -110,12 +109,12 @@ const Preview3 = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="col-lg-4 d-flex justify-content-end">
+                    <div className="col-lg-4 d-flex flex-column align-items-center justify-content-center ">
                         <div className={dark ? styles.card_1_dark : styles.card_1}>
                             <div className="">
 
                                 <div className={styles.image_card_2}>
-                                <Image src={dark ? "/blackrect.png" : "/backrect.png"} width="100" height="100" />
+                                    <Image src={dark ? "/blackrect.png" : "/backrect.png"} width="100" height="100" />
                                 </div>
                                 <div className={styles.image_card_1}>
                                     <Image src="/backcard.png" width="80" height="80" />
@@ -125,7 +124,7 @@ const Preview3 = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="col-lg-4 d-flex justify-content-end">
+                    <div className="col-lg-4 d-flex flex-column align-items-center justify-content-center">
                         <div className={dark ? styles.card_1_dark : styles.card_1}>
                             <div className="">
 
@@ -144,33 +143,33 @@ const Preview3 = () => {
             </div>
             <div className={styles.input_container}>
                 <div className="container">
-                    <div className={styles.second_main_heading}>Contact me</div>
-                    <div className={styles.second2_main_heading}>have project in mind</div>
+                    <div className={dark ? styles.second_main_heading_dark : styles.second_main_heading}>Contact me</div>
+                    <div className={dark ? styles.second2_main_heading_dark : styles.second2_main_heading}>have project in mind</div>
                     <div className="row">
-                    <div className="col-2 d-flex justify-content-center align-items-center flex-column">
-                            <div className={styles.images_form_side}>
-                                <Link href="https://github.com/">
-                                    <div className=""><Image src={dark ? "/linkedinwhite.png" : "/linkedin.png"} width="50px" height="50px" /></div>
-                                </Link>
+                        <div className={"col-lg-6 d-flex justify-content-center align-items-center"}>
+                            <div className={styles.links_github}>
+                                <div className={styles.images_form_side}>
+                                    <Link href="https://github.com/">
+                                        <div className=""><Image src={dark ? "/linkedinwhite.png" : "/linkedin.png"} width="50px" height="50px" /></div>
+                                    </Link>
+                                </div>
+                                <div className={styles.images_form_side1}>
+                                    <Link href="https://github.com/">
+                                        <div className=""><Image src={dark ? "/githubwhite.png" : "/github.png"} width="50px" height="50px" /></div>
+                                    </Link>
+                                </div>
+                                <div className={styles.images_form_side2}>
+                                    <Link href="https://github.com/">
+                                        <div className=""><Image src={dark ? "/twitterwhite.png" : "/twitter.png"} width="60px" height="60px" /></div>
+                                    </Link>
+                                </div>
                             </div>
-                            <div className={styles.images_form_side1}>
-                                <Link href="https://github.com/">
-                                    <div className=""><Image src={dark ? "/githubwhite.png" : "/github.png"} width="50px" height="50px" /></div>
-                                </Link>
-                            </div>
-                            <div className={styles.images_form_side2}>
-                                <Link href="https://github.com/">
-                                    <div className=""><Image src={dark ? "/twitterwhite.png" : "/twitter.png"} width="50px" height="50px" /></div>
-                                </Link>
-                            </div>
-                        </div>
-
-                        <div className="col-lg-5 d-flex">
                             <div className={styles.form_in}>
 
                                 <form>
+                                    
                                     <div className="">
-                                        <input className={dark ? styles.input_name_dark : styles.input_name}  type="text" placeholder="Your Name" />
+                                        <input className={dark ? styles.input_name_dark : styles.input_name} type="text" placeholder="Your Name" />
                                     </div>
                                     <div className="">
                                         <input className={dark ? styles.input_email_dark : styles.input_email} type="email" placeholder="Your Email" />
@@ -185,7 +184,7 @@ const Preview3 = () => {
 
                             </div>
                         </div>
-                        <div className="col-lg-5 d-flex justify-content-center align-items-center flex-column">
+                        <div className="col-lg-6 d-flex justify-content-center align-items-center flex-column">
                             <Image src="/message.png" width="250px" height=" 250px" alt="message image" />
                         </div>
                     </div>
