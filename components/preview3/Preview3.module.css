@@ -2,9 +2,21 @@
     overflow: hidden !important;
 }
 
+
+
 .preview3_dark {
     overflow: hidden !important;
     background-color: #131313;
+}
+
+.navbar_inital{
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+}
+
+.row_1{
+    display: flex;
+    flex: column;
 }
 
 .navbar {
@@ -29,6 +41,14 @@
     border: none;
     outline: none;
     background-color: #BFDEE5;
+}
+.nav_darkmode_mobile{
+    justify-content: center;
+    margin-left: 10px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: #F3F3F3;
 }
 .nav_links {
     display: flex;
@@ -168,6 +188,7 @@
     background: #064C5B;
     outline: none;
     border: none;
+    width: 195px;
 
 }
 
@@ -449,11 +470,44 @@
 .form_in {
     margin-left: 50px;
 }
+.form_everything{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media (max-width:1400px){
+    .form_in{
+        width:30%;
+        margin-left: 0px;
+    }
+}
+
+@media(max-width:992px){
+    .row_1{
+        flex-direction: column-reverse;
+    }
+    .image_first {
+        left: 0%;
+        z-index: -1;
+    }
+
+    .image_Second {
+
+        left: 0%;
+    }
+    .links_github{
+        margin-left: -250px;
+    }
+}
 
 @media screen and (max-width: 768px) {
     .nav_links {
         display: none;
     }
+
+    
 
     .nav_links_mobile {
         position: absolute;
@@ -472,5 +526,11 @@
         display: block;
         position: absolute;
         right: 30px;
+    }
+}
+
+@media (max-width: 576px){
+    .links_github{
+        margin-left: -190px;
     }
 }
